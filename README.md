@@ -7,13 +7,15 @@ Developed under the one-on-one mentorship of a senior front-end engineer, this p
 
 ## 🚀 Overview
 
-The Habit Tracker App helps users build long-term habits through:
-- Daily tracking  
-- Progress visualization  
-- Level-based gamification  
-- Clean, intuitive UI  
-- Secure authentication  
+The Habit Tracker App helps users build habits through daily tracking and gamified motivation:
 
+- **User Registration & Profile:** Users can sign up, log in, and view their profile with avatar, account creation date, and mastery points.  
+- **Habit Creation & Tracking:** Users create habits (e.g., 15 push-ups/day) and mark them “done” each day. The “done” button can be pressed only once every 24 hours to prevent abuse.  
+- **XP & Levels:** Completing habits grants XP to increase levels. Levels start at 1 and rise progressively, encouraging consistent engagement. Users can still progress even with sporadic habit completion.  
+- **Mastery & Streaks:** Consecutive daily completions build streaks, earning mastery ranks (Bronze → Silver → Gold). Breaking a streak retains the current mastery but requires rebuilding streaks to progress.  
+- **Progress Visualization:** Users can track streaks, levels, and mastery to stay motivated and maintain habits.  
+
+This design balances **flexibility for occasional habit completion** with **incentives for daily consistency**.
 This project demonstrates my ability to design and implement a complete web application — **frontend, backend, architecture, deployment-ready structure, and API communication**.
 
 ---
@@ -24,7 +26,7 @@ This project demonstrates my ability to design and implement a complete web appl
 - Applying **Feature-Sliced Design (FSD)** for scalable frontend architecture  
 - Implementing **MVC architecture** on the backend  
 - Practical understanding of **CORS**, routing, middleware, validation, and API data flow  
-- Structuring clean and maintainable React codebases  
+- Structuring clean and maintainable React Typescript code  
 - End-to-end flow of form validation, state management, and API communication  
 - Building secure authentication with JWT  
 - Working with ORMs (**Sequelize**), data modeling, and migrations  
@@ -36,6 +38,7 @@ This project demonstrates my ability to design and implement a complete web appl
 
 ### **Frontend**
 - React  
+- Typescript
 - Material UI (MUI)  
 - Redux Toolkit  
 - Axios  
@@ -44,7 +47,7 @@ This project demonstrates my ability to design and implement a complete web appl
 ### **Backend**
 - Node.js + Express  
 - Sequelize ORM + sequelize-cli  
-- PostgreSQL/MySQL (choose yours)  
+- PostgreSQL
 - MVC architecture  
 - JWT Authentication  
 - CORS configuration  
@@ -61,8 +64,8 @@ This project demonstrates my ability to design and implement a complete web appl
 ### ✔ User Features
 - Register & log in  
 - Create, update, and delete habits  
-- Track daily progress  
-- Earn levels through consistent completion  
+- Track daily progress via personalized graphs on profile page  
+- Earn levels and mastery through consistent completion  
 - Responsive UI  
 
 ### ✔ Technical Features
@@ -88,10 +91,15 @@ cd frontend && npm install
 # 3. Environment variables
 Create .env files in both frontend and backend folders
 
-# 4. Run backend
+# 4. Run Sequelize migrations and seeders
+cd backend
+npx sequelize-cli db:migrate
+npx sequelize-cli db:seed:all
+
+# 5. Run backend
 npm run dev
 
-# 5. Run frontend
+# 6. Run frontend
 npm run start
 
 ```
@@ -100,7 +108,7 @@ npm run start
 
 **Nesterov Egor**  
 BSc in Computer Science  
-Software Engineer Intern | Machine Learning Intern
+Software Engineer Intern | Full-stack Developer Intern
 
 **Contact:**
 - 📧 Email: [egor.nesterov2002@gmail.com](mailto:egor.nesterov2002@gmail.com)  
