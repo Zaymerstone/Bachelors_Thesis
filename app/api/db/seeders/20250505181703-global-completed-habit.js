@@ -1,0 +1,563 @@
+"use strict";
+
+/** @type {import('sequelize-cli').Migration} */
+module.exports = {
+  async up(queryInterface, Sequelize) {
+    const now = new Date();
+
+    await queryInterface.bulkInsert("GlobalCompletedHabits", [
+      {
+        userId: 1,
+        globalHabitId: 1,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 1,
+        globalHabitId: 2,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 1,
+        globalHabitId: 3,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 1,
+        globalHabitId: 4,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 1,
+        globalHabitId: 5,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 1,
+        globalHabitId: 6,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 2,
+        globalHabitId: 1,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 2,
+        globalHabitId: 2,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 2,
+        globalHabitId: 3,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 2,
+        globalHabitId: 4,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 2,
+        globalHabitId: 5,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 2,
+        globalHabitId: 6,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 3,
+        globalHabitId: 1,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 3,
+        globalHabitId: 2,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 3,
+        globalHabitId: 3,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 3,
+        globalHabitId: 4,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 3,
+        globalHabitId: 5,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 3,
+        globalHabitId: 6,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 4,
+        globalHabitId: 1,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 4,
+        globalHabitId: 2,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 4,
+        globalHabitId: 3,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 4,
+        globalHabitId: 4,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 4,
+        globalHabitId: 5,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 4,
+        globalHabitId: 6,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 5,
+        globalHabitId: 1,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 5,
+        globalHabitId: 2,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 5,
+        globalHabitId: 3,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 5,
+        globalHabitId: 4,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 5,
+        globalHabitId: 5,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 5,
+        globalHabitId: 6,
+        createdAt: now,
+        updatedAt: now,
+      },
+
+      {
+        userId: 6,
+        globalHabitId: 1,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 6,
+        globalHabitId: 2,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 6,
+        globalHabitId: 3,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 6,
+        globalHabitId: 4,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 6,
+        globalHabitId: 5,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 6,
+        globalHabitId: 6,
+        createdAt: now,
+        updatedAt: now,
+      },
+
+      {
+        userId: 7,
+        globalHabitId: 1,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 7,
+        globalHabitId: 2,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 7,
+        globalHabitId: 3,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 7,
+        globalHabitId: 4,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 7,
+        globalHabitId: 5,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 7,
+        globalHabitId: 6,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 8,
+        globalHabitId: 1,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 8,
+        globalHabitId: 2,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 8,
+        globalHabitId: 3,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 8,
+        globalHabitId: 4,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 8,
+        globalHabitId: 5,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 8,
+        globalHabitId: 6,
+        createdAt: now,
+        updatedAt: now,
+      },
+
+      {
+        userId: 9,
+        globalHabitId: 1,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 9,
+        globalHabitId: 2,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 9,
+        globalHabitId: 3,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 9,
+        globalHabitId: 4,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 9,
+        globalHabitId: 5,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 9,
+        globalHabitId: 6,
+        createdAt: now,
+        updatedAt: now,
+      },
+
+      {
+        userId: 10,
+        globalHabitId: 1,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 10,
+        globalHabitId: 2,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 10,
+        globalHabitId: 3,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 10,
+        globalHabitId: 4,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 10,
+        globalHabitId: 5,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 10,
+        globalHabitId: 6,
+        createdAt: now,
+        updatedAt: now,
+      },
+
+      {
+        userId: 11,
+        globalHabitId: 1,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 11,
+        globalHabitId: 2,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 11,
+        globalHabitId: 3,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 11,
+        globalHabitId: 4,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 11,
+        globalHabitId: 5,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 11,
+        globalHabitId: 6,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 12,
+        globalHabitId: 1,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 12,
+        globalHabitId: 2,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 12,
+        globalHabitId: 3,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 12,
+        globalHabitId: 4,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 12,
+        globalHabitId: 5,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 12,
+        globalHabitId: 6,
+        createdAt: now,
+        updatedAt: now,
+      },
+
+      {
+        userId: 13,
+        globalHabitId: 1,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 13,
+        globalHabitId: 2,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 13,
+        globalHabitId: 3,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 13,
+        globalHabitId: 4,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 13,
+        globalHabitId: 5,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 13,
+        globalHabitId: 6,
+        createdAt: now,
+        updatedAt: now,
+      },
+
+      {
+        userId: 14,
+        globalHabitId: 1,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 14,
+        globalHabitId: 2,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 14,
+        globalHabitId: 3,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 14,
+        globalHabitId: 4,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 14,
+        globalHabitId: 5,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 14,
+        globalHabitId: 6,
+        createdAt: now,
+        updatedAt: now,
+      },
+
+      {
+        userId: 15,
+        globalHabitId: 1,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 15,
+        globalHabitId: 2,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 15,
+        globalHabitId: 3,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 15,
+        globalHabitId: 4,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 15,
+        globalHabitId: 5,
+        createdAt: now,
+        updatedAt: now,
+      },
+      {
+        userId: 15,
+        globalHabitId: 6,
+        createdAt: now,
+        updatedAt: now,
+      },
+    ]);
+  },
+
+  async down(queryInterface, Sequelize) {
+    await queryInterface.bulkDelete("GlobalCompletedHabits", null, {});
+  },
+};
